@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.abc> *:first-child {
+    margin-top: auto;
+}
+
+
+#background-grid{
+    background-image: url(../src/assets/grid.png);
+    background-size : cover;
+    background-repeat : contain;
+
+    /* margin-top: 100px; */
+    padding-bottom: 30px;
+    z-index: 1000;
+}
+
+#background-img-chatzone{
+    background-image: url(../src/Components/chatzone.gif);
+    background-size : cover;
+    background-repeat: contain;
+    height : 350px;
+    width : 400px;
+}
+
+#background-black-grid{
+    background-image: url(../src/assets/black-grid.png);
+    background-size : cover;
+    background-repeat : contain;
+    width: 100%;
+    height : 100%;   
+    padding-bottom: 30px;
+    z-index: 1000;
+}
+
+#background-header-chatzone{
+    background-image: url(../src/Components/chatzone.gif);
+    background-size : cover;
+    background-repeat: contain;
+    z-index: 1;
+    height : 60px;
+    width : 70px;
+}
+
+.transition-color-custom{
+    transition : border-radius 1s , hover 1s , background-color 1s;
+    transition-timing-function : ease-in-out;
+}
+
+.transition-width-custom{
+    transition : height 1s , width 1s;
+    transition-timing-function : ease-in-out;
+}
+
+ /* width */
+ ::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: white;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: white;
+  } 
+
+  .scroll-green-haha{
+    --webkit-scrollbar-color:  #50FA7B  black !important;
+    --webkit-scrollbar-width: 3px;
+    scrollbar-color: #50FA7B  black !important;
+    scrollbar-width: 3px;
+  }
+
+  @media (max-height: 645px){
+    .messages{
+      height: 90%;
+    } 
+
+    
+  }
+
+  @media(max-height: 880px){
+    .height-media{
+      height: 93% ;
+    }
+
+    .messages{
+      margin-top: 70px ;
+      margin-bottom: 30px;
+    }
+  }
+
+
+  @media( max-height : 968px){
+    .height-media{
+      height: 93%;
+    }
+
+    .messages{
+      margin-top: 70px;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media(max-width: 1700px){
+    .sendbar{
+      right: 200px;
+      width: 100% ;
+    }
+
+
+    .messages{
+      max-width: 100%;
+    }
+
+    .sendbarnested{
+      -moz-padding-right: 20px !important;
+      -moz-width: 60% !important;
+      padding-right: 20px !important;
+      width: 100% ;
+    }
+  }
+
+  @media(max-width: 1599px){
+    .sendbar{
+      right: -90px !important;
+      width: 60% !important;
+    }
+
+
+    .messages{
+      max-width: 100%;
+    }
+
+    .sendbarnested{
+      -moz-padding-right: 20px !important;
+      -moz-width: 60% !important;
+      padding-right: 20px !important;
+      width: 60% !important;
+    }
+  }
+
+  @media(max-width: 1570px ) {
+    
+    .height-media{
+      height: 91.7%;
+    }
+
+    .sendbar{
+      width: 900px !important;
+    }
+
+    .sendbarnested{
+      max-width: 890px !important;
+    }
+
+    #text{
+      max-width: 50% !important;
+    }
+
+    .messages{
+      max-width: 99%;
+    }
+  }
+
+
+  @media(max-width: 1250px){
+
+    .height-media{
+      height: 90%;
+    }
+
+    .messages{
+      max-width: 96%;
+    }
+  }
+
+  @media(min-width: 1540px){
+    .searchresult{
+      width: 16% !important;
+    }
+  }
+
+  @media(min-width: 1380px){
+    .searchresult{
+      width: 18%;
+    }
+  }
